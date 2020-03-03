@@ -6,6 +6,8 @@
 # python pre-reqs 
 pip3.8 install Django
 pip3.8 install pillow
+pip3.8 install 
+
 
 
 # create blank new repo on github
@@ -33,14 +35,12 @@ git push origin feature1
 
 
 
-# init first two apps 
+# init first app 
 python3.8 manage.py startapp app_blog
-python3.8 manage.py startapp app_projects
 
 
-# add new apps to blog_core/settings.py --> INSTALLED_APPS
-'app_blog',
-'app_projects',
+# add new app to blog_core/settings.py --> INSTALLED_APPS
+'app_blog.apps.AppBlogConfig',
 
 
 # check the server
